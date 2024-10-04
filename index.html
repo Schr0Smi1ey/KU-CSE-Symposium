@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synergy X</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet" />
+
+    <!-- DaisyUI + TailWind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              buttonHover: "#ffdbd7",
+              dark1: "#5E6282",
+            },
+            fontFamily: {
+              "google-sans": ["Google Sans", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"],
+              volkhov: ["Volkhov", "serif"],
+              "open-sans": ["Open Sans", "sans-serif"],
+              miama: ["Miama", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Fontawesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header
+      class="md:container mx-auto py-5 md:pt-5 lg:pt-10 bg-[url('Assets/1.png')] bg-no-repeat bg-cover"
+    >
+      <!-- Nabar Section -->
+      <nav
+        class="mx-auto border-2 border-red-600 p-2 lg:p-4 flex justify-between items-center gap-[20%]"
+      >
+        <div
+          class="btn bg-transparent hover:bg-buttonHover border-none focus:outline-none"
+        >
+          <h1 class="font-extrabold text-xl">
+            Synergy -
+            <span
+              class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"
+              >X</span
+            >
+          </h1>
+        </div>
+
+        <div class="justify-end flex items-center">
+          <div class="flex-1">
+            <ul
+              class="font-google-sans font-semibold text-lg flex justify-between items-center gap-4 xl:gap-8 2xl:gap-14"
+            >
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <a href="">About</a>
+              </li>
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <a href="">Events</a>
+              </li>
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <a href="">Schedule</a>
+              </li>
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <a href="">Speakers</a>
+              </li>
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <a href="">Contact Us</a>
+              </li>
+              <li
+                class="hidden hover:bg-buttonHover rounded-lg sm:flex btn-effect"
+              >
+                <button
+                  class="border-2 border-black font-bold text-base rounded-lg p-2"
+                >
+                  Registration
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Dropdown Menu for Small Device -->
+          <div class="dropdown dropdown-left lg:hidden ml-5">
+            <!-- Menu Button -->
+            <div
+              tabindex="0"
+              role="button"
+              class="p-1 rounded-xl border-none lg:hidden"
+            >
+              <img
+                src="Assets/Icon/menu.svg"
+                alt="menubar"
+                class="w-6 md:w-8 h-6 md:h-8"
+              />
+            </div>
+            <!-- Menu -->
+            <ul
+              tabindex="0"
+              class="menu menu-xs dropdown-content bg-base-100 rounded-box z-[1] mt-4 sm:mt-14 p-1 shadow"
+            >
+              <!-- Main Navigation Links -->
+              <ul
+                class="space-y-1 font-normal text-sm md:text-base text-[#737373] rounded-lg"
+              >
+                <li>
+                  <a class="btn-effect">About</a>
+                </li>
+                <li>
+                  <a class="btn-effect">Events</a>
+                </li>
+                <li>
+                  <a class="btn-effect">Schedule</a>
+                </li>
+                <li>
+                  <a class="btn-effect">Speakers</a>
+                </li>
+                <li>
+                  <a class="btn-effect">Contact Us</a>
+                </li>
+                <li class="sm:hidden">
+                  <button
+                    class="text-black border-[1px] border-black px-3 py-1 flex justify-around p-1 md:hidden text-left font-extrabold text-[10px] md:text-base rounded-full"
+                  >
+                    Registration
+                  </button>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner Section -->
+      <section class="mx-auto mt-10">
+        <div class="flex flex-col lg:flex-row text-center lg:text-left">
+          <div
+            class="lg:w-2/3 border-2 border-red-600 p-3 lg:p-5 xl:p-10 space-y-3 lg:space-y-5 xl:space-y-10"
+          >
+            <h2
+              class="font-poppins font-bold text-lg md:text-xl text-[#DF6951]"
+            >
+              Shaping Tomorrow's Technology and Innovation
+            </h2>
+            <h1
+              class="mx-auto lg:ml-0 leading-loose border-2 border-yellow-600 font-volkhov font-bold text-3xl lg:text-5xl 2xl:text-[70px] tracking-tight text-black"
+            >
+              Synergy -
+              <span
+                class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"
+                >X</span
+              >
+              2024: <br />
+              Where Innovation Meets Data
+            </h1>
+            <p
+              class="w-[80%] mx-auto lg:ml-0 lg:w-[85%] 2xl:w-[75%] font-poppins font-normal sm:font-medium text-sm md:text-base xl:text-lg text-dark1"
+            >
+              A 3-Day Symposium & Datathon to Inspire, Innovate, and Connect
+            </p>
+            <div class="w-fit flex flex-wrap mx-auto lg:ml-0 gap-3 md:gap-5">
+              <button
+                class="border-[0.5px] border-opacity-50 border-black sm:px-2 md:px-4 sm:py-1 md:py-2 font-bold text-base md:text-lg rounded-xl hover:bg-buttonHover"
+              >
+                <a>Register Now</a>
+              </button>
+              <button
+                class="border-[0.5px] border-opacity-50 border-black sm:px-2 md:px-4 sm:py-1 md:py-2 font-medium text-sm md:text-lg rounded-xl hover:bg-buttonHover"
+              >
+                Explore Events
+              </button>
+            </div>
+          </div>
+          <div
+            class="lg:w-[75%] flex border-2 border-red-600 items-center justify-center p-3"
+          >
+            <img src="Assets/banner.png" alt="" class="rounded-xl" />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- Countdown Section -->
+      <div
+        class="md:container mx-auto my-5 md:my-8 lg:my-10 bg-neutral-100 p-4 md:p-6 lg:p-8 text-center"
+      >
+        <h2 class="text-3xl font-bold mb-4">
+          Synergy -
+          <span
+            class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"
+            >X</span
+          >
+          2024: Time to Innovate is Ticking Down!
+        </h2>
+        <p class="text-lg mb-8 text-dark1">
+          Join us for a groundbreaking event in tech and ideas!
+        </p>
+
+        <!-- Countdown Timer -->
+        <div
+          class="grid auto-cols-max grid-flow-col gap-5 text-center justify-center"
+        >
+          <div
+            class="bg-neutral rounded-box text-neutral-content flex flex-col p-2"
+          >
+            <span class="countdown font-mono text-5xl">
+              <span id="days" style="--value: 15"></span>
+            </span>
+            days
+          </div>
+          <div
+            class="bg-neutral rounded-box text-neutral-content flex flex-col p-2"
+          >
+            <span class="countdown font-mono text-5xl">
+              <span id="hours" style="--value: 10"></span>
+            </span>
+            hours
+          </div>
+          <div
+            class="bg-neutral rounded-box text-neutral-content flex flex-col p-2"
+          >
+            <span class="countdown font-mono text-5xl">
+              <span id="minutes" style="--value: 24"></span>
+            </span>
+            min
+          </div>
+          <div
+            class="bg-neutral rounded-box text-neutral-content flex flex-col p-2"
+          >
+            <span class="countdown font-mono text-5xl">
+              <span id="seconds" style="--value: 00"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Events -->
+      <section
+        class="container mx-auto my-5 md:my-8 lg:my-10 bg-gray-100 p-4 md:p-6 lg:p-8 text-center"
+      >
+        <div>
+          <h1 class="text-4xl font-bold text-gray-800 mb-4">Featured Events</h1>
+          <p class="text-lg text-gray-600 mb-8">
+            Explore the most exciting competitions and opportunities to engage
+            with industry experts.
+          </p>
+        </div>
+
+        <!-- First Card -->
+        <div
+          class="flex flex-col md:flex-row items-center justify-between border-2 border-red-600 p-2"
+        >
+          <div class="w-1/2">
+            <img src="Assets/banner.png" alt="Symposium" class="rounded-lg" />
+          </div>
+          <div class="border-red-600 border-2 w-[48%] p-4 text-left">
+            <h2 class="font-bold text-5xl mb-5">Datathon</h2>
+            <p class="text-gray-600 mb-4">
+              Collaborate with data enthusiasts to solve real-world challenges
+              using big data and machine learning techniques.
+            </p>
+            <p class="text-gray-600 mb-2">
+              <strong>Date:</strong> October 26, 2024
+            </p>
+            <p class="text-gray-600 mb-2">
+              <strong>Prizes:</strong> 1st Prize: $500, 2nd Prize: $300
+            </p>
+            <p class="text-gray-600 mb-2">
+              <strong>Registration Deadline:</strong> October 15, 2024
+            </p>
+            <p class="text-gray-600 mb-2">
+              <strong>Rules:</strong> Teams of up to 3 must use provided
+              datasets.
+            </p>
+            <a
+              href="#"
+              class="border-[1px] border-black inline-block px-4 py-2 rounded"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+        <!-- Second Card -->
+        <div
+          class="flex flex-col md:flex-row items-center justify-between border-2 border-red-600 p-2"
+        >
+          <div class="border-red-600 border-2 w-1/2 p-4 text-left">
+            <h2 class="font-bold text-5xl mb-5">Symposium</h2>
+            <p class="text-gray-600 mb-4">
+              Join industry leaders as they share their insights and innovations
+              in technology and data.
+            </p>
+            <p class="text-gray-600 mb-2">
+              <strong>Date:</strong> October 26, 2024
+            </p>
+            <p class="text-gray-600 mb-2">
+              <strong>Location:</strong> University Auditorium
+            </p>
+            <p class="text-gray-600 mb-2">
+              <strong>Keynote Speakers:</strong> Renowned experts from top tech
+              companies.
+            </p>
+            <p class="text-gray-600 mb-2">
+              <strong>Networking:</strong> Connect with professionals and fellow
+              enthusiasts.
+            </p>
+            <div class="flex gap-4 w-fit">
+              <a
+                class="border-[1px] border-black inline-block px-4 py-2 rounded"
+              >
+                Learn More
+              </a>
+              <a
+                class="border-[1px] border-black inline-block px-4 py-2 rounded"
+              >
+                Speakers</a
+              >
+            </div>
+            <div class="w-[48%]">
+              <img src="Assets/banner.png" alt="Symposium" class="rounded-lg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section
+        class="container mx-auto my-5 md:my-8 lg:my-10 bg-gray-100 p-4 md:p-6 lg:p-8"
+      >
+        <!-- Title -->
+        <div class="text-center mb-16 border-2 border-red-500">
+          <h1 class="font-semibold text-3xl md:text-4xl lg:text-5xl">
+            Frequently Asked <span class="text-primary-colour">Questions</span>
+          </h1>
+        </div>
+        <!-- content -->
+        <div
+          class="border-2 border-red-500 flex flex-col md:flex-row justify-between items-center mx-auto"
+        >
+          <!-- icon -->
+          <div
+            class="border-2 border-red-500 h-full md:w-1/2 mx-auto flex items-center"
+          >
+            <img
+              src="Assets/Icon/faq.png"
+              alt=""
+              class="w-fit border-green-600 border-2"
+            />
+          </div>
+          <!-- questions -->
+          <div class="border-2 border-red-500 w-full md:w-1/2 space-y-2">
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                What is SynergyX 2024?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  SynergyX 2024 is a two-day event combining a symposium and a
+                  datathon, focused on technology, innovation, and data. The
+                  symposium features keynote speakers from industry leaders,
+                  while the datathon challenges participants to solve real-world
+                  problems using big data and machine learning.
+                </p>
+              </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                Who can participate in the Datathon?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  The datathon is open to students, professionals, and data
+                  enthusiasts from all fields. Teams of up to 3 participants are
+                  allowed, and prior experience with big data and machine
+                  learning is recommended but not mandatory.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                How can I register for the Symposium and Datathon?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  To register for either the symposium or the datathon, visit
+                  the SynergyX 2024 website and click the "Register Now" button.
+                  You'll be guided through a simple registration form where you
+                  can choose to attend either or both events.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                What is the deadline for registration?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  The registration deadline for both the symposium and the
+                  datathon is October 15, 2024. Be sure to register before this
+                  date to secure your spot at SynergyX 2024!
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                Is there a registration fee?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  There is no fee for attending the symposium, but there is a
+                  small entry fee for participating in the datathon to help
+                  cover organizational costs. Pricing details are available on
+                  the registration page.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                Where will SynergyX 2024 be held?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  SynergyX 2024 will take place at the
+                  <a
+                    href="https://www.google.com.bd/maps/place/Khulna+University/@22.8022088,89.5313482,17z/data=!3m1!4b1!4m6!3m5!1s0x39ff85490c50d28f:0xadae6f7b93b7069a!8m2!3d22.8022039!4d89.5339231!16zL20vMDZsenhy?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D"
+                    class="font-bold"
+                    >University Campus</a
+                  >. Specific venue details and directions will be provided upon
+                  registration and can also be found on the event website.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                Do I need to bring anything for the Datathon?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  Yes, participants are expected to bring their own laptops and
+                  any necessary equipment. All datasets and problem statements
+                  will be provided on the day of the event.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                What are the prizes for the Datathon?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  The top-performing teams in the datathon will be awarded cash
+                  prizes. The first-place team will receive $500, and the
+                  second-place team will win $300. All participants will also
+                  receive certificates of participation.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                How can I stay updated on event details?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  Once you register, you'll receive email updates with all the
+                  necessary information about the event. You can also follow us
+                  on our social media channels for the latest updates,
+                  schedules, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+    </main>
+    <!-- Script -->
+    <script src="Script/countdown.js"></script>
+  </body>
+</html>
