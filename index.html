@@ -230,18 +230,16 @@
 
         <!-- Countdown Timer -->
         <div
-          class="grid auto-cols-max grid-flow-col gap-5 text-center justify-center"
+          class="grid auto-cols-max grid-flow-col gap-5 text-center justify-center rounded-xl"
         >
-          <div
-            class="bg-neutral rounded-box text-neutral-content flex flex-col p-2"
-          >
+          <div class="bg-[#37a3cf] rounded-box text-black flex flex-col p-2">
             <span class="countdown font-mono text-5xl">
               <span id="days" style="--value: 15"></span>
             </span>
             days
           </div>
           <div
-            class="bg-neutral rounded-box text-neutral-content flex flex-col p-2"
+            class="bg-[#59d9e3] rounded-box text-neutral-black flex flex-col p-2"
           >
             <span class="countdown font-mono text-5xl">
               <span id="hours" style="--value: 10"></span>
@@ -249,7 +247,7 @@
             hours
           </div>
           <div
-            class="bg-neutral rounded-box text-neutral-content flex flex-col p-2"
+            class="bg-[#31afd3] rounded-box text-neutral-black flex flex-col p-2"
           >
             <span class="countdown font-mono text-5xl">
               <span id="minutes" style="--value: 24"></span>
@@ -257,7 +255,7 @@
             min
           </div>
           <div
-            class="bg-neutral rounded-box text-neutral-content flex flex-col p-2"
+            class="bg-[#df6951] rounded-box text-neutral-black flex flex-col p-2"
           >
             <span class="countdown font-mono text-5xl">
               <span id="seconds" style="--value: 00"></span>
@@ -269,11 +267,11 @@
 
       <!-- Featured Events -->
       <section
-        class="container mx-auto my-5 md:my-8 lg:my-10 bg-gray-100 p-4 md:p-6 lg:p-8 text-center"
+        class="container mx-auto my-5 md:my-8 lg:my-10 bg-gray-100 p-4 md:p-6 lg:p-8 text-center rounded-xl"
       >
-        <div>
+        <div class="bg-white rounded-lg py-2 mb-8">
           <h1 class="text-4xl font-bold text-gray-800 mb-4">Featured Events</h1>
-          <p class="text-lg text-gray-600 mb-8">
+          <p class="text-lg text-gray-600">
             Explore the most exciting competitions and opportunities to engage
             with industry experts.
           </p>
@@ -281,7 +279,7 @@
 
         <!-- CEO Talk -->
         <div
-          class="flex flex-col lg:flex-row lg:items-center justify-between border-2 border-red-600 p-2"
+          class="flex flex-col lg:flex-row lg:items-center justify-between border-2 border-red-600 p-2 bg-white rounded-lg mb-8"
         >
           <div
             class="border-red-600 border-2 lg:w-1/2 p-4 mb-3 lg:mb-0 text-left"
@@ -307,12 +305,14 @@
             </p>
             <div class="flex gap-4 w-fit">
               <a
-                class="border-[1px] border-black inline-block px-4 py-2 rounded"
+                class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
+                href="#"
               >
                 Learn More
               </a>
               <a
-                class="border-[1px] border-black inline-block px-4 py-2 rounded"
+                class="border-[1px] border-black hover:bg-buttonHover hover:bg-buttonHover inline-block px-4 py-2 rounded"
+                href="#"
               >
                 Speakers</a
               >
@@ -324,7 +324,7 @@
         </div>
         <!-- Datathon -->
         <div
-          class="flex flex-col-reverse lg:flex-row lg:items-center justify-between border-2 border-red-600 p-2"
+          class="flex flex-col-reverse lg:flex-row lg:items-center justify-between border-2 border-red-600 p-2 bg-white rounded-lg mb-8"
         >
           <div class="lg:w-1/2">
             <img src="Assets/banner.png" alt="Symposium" class="rounded-lg" />
@@ -352,13 +352,13 @@
             </p>
             <div class="flex gap-4 w-fit">
               <a
-                class="border-[1px] border-black inline-block px-4 py-2 rounded"
+                class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
                 href="#"
               >
                 Learn More
               </a>
               <a
-                class="border-[1px] border-black inline-block px-4 py-2 rounded"
+                class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
                 href="#"
               >
                 Register Now</a
@@ -368,7 +368,7 @@
         </div>
         <!-- Programming Contest -->
         <div
-          class="flex flex-col lg:flex-row lg:items-center justify-between border-2 border-blue-600 p-2"
+          class="flex flex-col lg:flex-row lg:items-center justify-between border-2 border-blue-600 p-2 bg-white rounded-lg mb-8"
         >
           <div
             class="border-blue-600 border-2 lg:w-1/2 p-4 text-left mb-3 lg:mb-0"
@@ -393,13 +393,13 @@
             </p>
             <div class="flex gap-4 w-fit">
               <a
-                class="border-[1px] border-black inline-block px-4 py-2 rounded"
+                class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
                 href="#"
               >
                 Learn More
               </a>
               <a
-                class="border-[1px] border-black inline-block px-4 py-2 rounded"
+                class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
                 href="#"
               >
                 Register Now</a
@@ -416,7 +416,7 @@
         </div>
         <!-- Innovation Showcasing -->
         <div
-          class="flex flex-col-reverse lg:flex-row lg:items-center justify-between border-2 border-green-600 p-2"
+          class="flex flex-col-reverse lg:flex-row lg:items-center justify-between border-2 border-green-600 p-2 bg-white rounded-lg mb-8"
         >
           <div class="lg:w-1/2">
             <img
@@ -449,13 +449,13 @@
             </p>
             <div class="flex gap-4 w-fit">
               <a
-                class="border-[1px] border-black inline-block px-4 py-2 rounded"
+                class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
                 href="#"
               >
                 Learn More
               </a>
               <a
-                class="border-[1px] border-black inline-block px-4 py-2 rounded"
+                class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
                 href="#"
               >
                 Register Now</a
@@ -625,6 +625,112 @@
       </section>
       <!--  -->
     </main>
+    <footer class="bg-gradient-to-r from-[#286d89] to-[#34b9c3] p-8 py-5">
+      <section class="md:container mx-auto my-5 lg:my-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+          <div class="border-2 border-yellow-500">
+            <div class="flex flex-col gap-3 mb-6 text-center lg:text-left">
+              <div
+                class="btn mx-auto lg:ml-0 w-fit bg-transparent hover:bg-buttonHover border-none focus:outline-none"
+              >
+                <h1 class="flex items-center font-extrabold text-xl text-white">
+                  Synergy -
+                  <span
+                    class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"
+                    >X</span
+                  >
+                </h1>
+              </div>
+              <p class="font-medium text-lg mb-3">
+                Empowering Innovation, Inspiring Excellence
+              </p>
+              <p class="font-normal text-base text-gray-400">
+                We promote the power of ideas and creativity, empowering
+                participants to innovate and challenge conventional thinking.
+                Our collaborative environment nurtures future leaders and
+                visionaries. Join us in celebrating ingenuity and fostering a
+                passion for lifelong learning.
+              </p>
+            </div>
+          </div>
+          <div class="divider lg:hidden"></div>
+          <div class="flex justify-center border-2 border-yellow-500 text-center lg:text-left">
+            <div class="mx-auto">
+              <h1 class="font-bold text-lg text-[#FFFFFFE6] mb-6">
+                Useful Links
+              </h1>
+              <ul class="font-normal mx-auto text-center text-base text-[#FFFFFF99] space-y-2">
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  CEO Talk
+                </li>
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Competitive Programming
+                </li>
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Datathon
+                </li>
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Project Showcase
+                </li>
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Poster Presentation
+                </li>
+                <li class="font-bold hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Register Now
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="divider lg:hidden"></div>
+          <div class="flex justify-center border-2 border-yellow-500 text-center lg:text-left">
+            <div class="mx-auto">
+              <h1 class="font-bold text-lg text-[#FFFFFFE6] mb-6">
+                Contact Us
+              </h1>
+              <ul class="w-fit font-normal mx-auto lg:ml-0 text-base text-[#FFFFFF99] space-y-3">
+                <li class="flex items-center gap-3 mb-2">
+                  <img src="Assets/mail.png" alt="" class="w-8 h-8" />
+                  info@universitycompetition.edu
+                </li>
+                <li class="flex items-center gap-3 mb-2">
+                  <img src="Assets/phone.png" alt="" class="w-8 h-8" />
+                  +8801719430433
+                </li>
+                <li class="flex items-center gap-3 mb-2">
+                  <img src="Assets/google-maps.png" alt="" class="w-8 h-8" />
+                  <a
+                    href="https://www.google.com.bd/maps/place/Khulna+University/@22.8022088,89.5313482,17z/data=!3m1!4b1!4m6!3m5!1s0x39ff85490c50d28f:0xadae6f7b93b7069a!8m2!3d22.8022039!4d89.5339231!16zL20vMDZsenhy?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D"
+                    class="font-bold"
+                    >University Campus</a
+                  >
+                </li>
+                <li>
+                  <div class="flex items-center gap-4 my-5">
+                    <img src="Assets/facebook.png" alt="" class="w-10 h-10" />
+                    <img src="Assets/twitter.png" alt="" class="w-10 h-10" />
+                    <img src="Assets/instagram.png" alt="" class="w-10 h-10" />
+                    <img src="Assets/gmail.png" alt="" class="w-10 h-10" />
+                  </div>
+                </li>
+                
+              </ul>
+              <p class="text-lg">
+                  Reach us for immediate assistance or clarification.
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="flex justify-between items-center mt-5">
+          <p class="text-[#FFFFFF99] text-base">
+            &copy; 2024 SynergyX. All rights reserved.
+          </p>
+          <p class="text-[#FFFFFF99] text-base">
+            Designed by <span class="text-white">Team Synergy - <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">X</span></span>
+          </p>
+      </section>
+    </footer>
+
     <!-- Script -->
     <script src="Script/countdown.js"></script>
   </body>
