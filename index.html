@@ -35,7 +35,6 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
               buttonHover: "#ffdbd7",
               dark1: "#5E6282",
             },
@@ -50,15 +49,6 @@
         },
       };
     </script>
-
-    <!-- Fontawesome library -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <header
@@ -89,7 +79,7 @@
                 <a href="">About</a>
               </li>
               <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
-                <a href="">Events</a>
+                <a href="#events">Events</a>
               </li>
               <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
                 <a href="">Schedule</a>
@@ -166,7 +156,7 @@
       <section class="mx-auto mt-10">
         <div class="flex flex-col lg:flex-row text-center lg:text-left">
           <div
-            class="lg:w-2/3 border-2 border-red-600 p-3 lg:p-5 xl:p-10 space-y-3 lg:space-y-5 xl:space-y-10"
+            class="lg:w-2/3 border-2 border-red-600 p-3 lg:p-5 xl:p-10 space-y-3 lg:space-y-4 xl:space-y-7"
           >
             <h2
               class="font-poppins font-bold text-lg md:text-xl text-[#DF6951]"
@@ -189,6 +179,15 @@
             >
               A 3-Day Symposium & Datathon to Inspire, Innovate, and Connect
             </p>
+            <div class="flex items-center justify-center lg:justify-start gap-4">
+              <img src="Assets/calendar.png" alt="Calendar" class="w-6 h-6">
+              <h3 class="font-bold text-lg">8 - 9 NOV, 2024</h3>
+            </div>
+            <div class="border-2 border-red-500 flex items-center justify-center lg:justify-start gap-4">
+              <img src="Assets/google-maps.png" alt="Location" class="border-2 border-green-700 w-10 h-10 lg:w-6 lg:h-6">
+              <a href="https://www.google.com/maps/place/Satyendra+Nath+Bose+Academic+Building/@22.802616,89.5321499,17z/data=!3m1!4b1!4m6!3m5!1s0x39ff8549472ab2c7:0x581022fe2caec6f6!8m2!3d22.8026111!4d89.5347248!16s%2Fg%2F11ddwhpz14?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D" 
+              target="_blank" class="font-bold text-lg">DR. Satyendra Nath Bose Academic Building, Khulna University</a>
+            </div>
             <div class="w-fit flex flex-wrap mx-auto lg:ml-0 gap-3 md:gap-5">
               <button
                 class="border-[0.5px] border-opacity-50 border-black p-1 sm:px-2 md:px-4 md:py-2 font-bold text-base md:text-lg rounded-xl hover:bg-buttonHover"
@@ -267,6 +266,7 @@
 
       <!-- Featured Events -->
       <section
+      id="events"
         class="container mx-auto my-5 md:my-8 lg:my-10 bg-gray-100 p-4 md:p-6 lg:p-8 text-center rounded-xl"
       >
         <div class="bg-white rounded-lg py-2 mb-8">
@@ -305,8 +305,9 @@
             </p>
             <div class="flex gap-4 w-fit">
               <a
+              id="ceoTalk-learnMore-btn"
                 class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
-                href="#"
+                href=""
               >
                 Learn More
               </a>
@@ -623,6 +624,35 @@
           </div>
         </div>
       </section>
+
+      <!-- Partners & Sponsors -->
+      <section class="container mx-auto my-5 md:my-8 lg:my-10 bg-gray-100">
+        <div class="border-2 border-green-600">
+          <h1 class="font-extrabold text text-4xl mx-auto mb-3 text-center">Our Valued Sponsors</h1>
+          <p class="text-base text-gray-400 mx-auto text-center lg:w-3/4">We sincerely thank our sponsors and partners for their generous support, making Synergy-X 2024 a success and fostering innovation and excellence.</p>
+        </div>
+        <div class="p-3">
+          <div class="flex flex-wrap justify-between items-center gap-5 md:gap-8 lg:gap-10 p-4 md:p-6 lg:p-8">
+            <div class="border-2 border-red-600 p-4 text-center bg-white rounded-lg mx-auto">
+              <img src="Assets/sponsor-1.png" alt="Sponsor 1" class="w-fit object-cover border-2 border-red-600" />
+            </div>
+            <div class="border-2 border-red-600 p-4 text-center bg-white rounded-lg mx-auto">
+              <img src="Assets/sponsor-2.png" alt="Sponsor 2" class="w-fit object-cover border-2 border-red-600" />
+            </div>
+            <div class="border-2 border-red-600 p-4 text-center bg-white rounded-lg mx-auto">
+              <img src="Assets/sponsor-3.png" alt="Sponsor 3" class="w-fit object-cover border-2 border-red-600" />
+            </div>
+            <div class="border-2 border-red-600 p-4 text-center bg-white rounded-lg mx-auto">
+              <img src="Assets/sponsor-4.png" alt="Sponsor 4" class="w-fit object-cover border-2 border-red-600" />
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row items-center justify-center gap-4">
+            <h1 class="font-semibold text-center text-xl">Want to sponsor Synergy-X 2024?</h1>
+            <button class="bg-white border-2 border-black px-2 py-1 hover:bg-btnHover rounded-lg font-semibold text-lg">Become a Sponsor</button>
+          </div>
+        </div>
+        </div>
+      </section>
       <!--  -->
     </main>
     <footer class="bg-gradient-to-r from-[#286d89] to-[#34b9c3] p-8 py-5">
@@ -730,7 +760,6 @@
           </p>
       </section>
     </footer>
-
     <!-- Script -->
     <script src="Script/countdown.js"></script>
   </body>

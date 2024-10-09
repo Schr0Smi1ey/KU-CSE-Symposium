@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CEO Talk</title>
+    <!-- DaisyUI + TailWind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              buttonHover: "#ffdbd7",
+              dark1: "#5E6282",
+            },
+            fontFamily: {
+              "google-sans": ["Google Sans", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"],
+              volkhov: ["Volkhov", "serif"],
+              "open-sans": ["Open Sans", "sans-serif"],
+              miama: ["Miama", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header
+      class="md:container mx-auto py-5 md:pt-5 lg:pt-10 bg-sky-400 bg-no-repeat bg-cover"
+    >
+      <!-- Nabar Section -->
+      <nav
+        class="mx-auto border-2 border-red-600 p-2 lg:p-4 flex justify-between items-center gap-[20%]"
+      >
+        <div
+          class="btn bg-transparent hover:bg-buttonHover border-none focus:outline-none"
+        >
+          <h1 class="font-extrabold text-xl">
+            Synergy -
+            <span
+              class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"
+              >X</span
+            >
+          </h1>
+        </div>
+
+        <div class="justify-end flex items-center">
+          <div class="flex-1">
+            <ul
+              class="font-google-sans font-semibold text-lg flex justify-between items-center gap-4 xl:gap-8 2xl:gap-14"
+            >
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <a href="">About</a>
+              </li>
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <a href="#events">Events</a>
+              </li>
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <a href="">Schedule</a>
+              </li>
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <a href="">Speakers</a>
+              </li>
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <a href="">Contact Us</a>
+              </li>
+              <li
+                class="hidden hover:bg-buttonHover rounded-lg sm:flex btn-effect"
+              >
+                <button
+                  class="border-2 border-black font-bold text-base rounded-lg p-2"
+                >
+                  Registration
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Dropdown Menu for Small Device -->
+          <div class="dropdown dropdown-left lg:hidden ml-5">
+            <!-- Menu Button -->
+            <div
+              tabindex="0"
+              role="button"
+              class="p-1 rounded-xl border-none lg:hidden"
+            >
+              <img
+                src="Assets/Icon/menu.svg"
+                alt="menubar"
+                class="w-6 md:w-8 h-6 md:h-8"
+              />
+            </div>
+            <!-- Menu -->
+            <ul
+              tabindex="0"
+              class="menu menu-xs dropdown-content bg-base-100 rounded-box z-[1] mt-4 sm:mt-14 p-1 shadow"
+            >
+              <!-- Main Navigation Links -->
+              <ul
+                class="space-y-1 font-normal text-sm md:text-base text-[#737373] rounded-lg"
+              >
+                <li>
+                  <a class="btn-effect">About</a>
+                </li>
+                <li>
+                  <a class="btn-effect">Events</a>
+                </li>
+                <li>
+                  <a class="btn-effect">Schedule</a>
+                </li>
+                <li>
+                  <a class="btn-effect">Speakers</a>
+                </li>
+                <li>
+                  <a class="btn-effect">Contact Us</a>
+                </li>
+                <li class="sm:hidden">
+                  <button
+                    class="text-black border-[1px] border-black px-3 py-1 flex justify-around p-1 md:hidden text-left font-extrabold text-[10px] md:text-base rounded-full"
+                  >
+                    Registration
+                  </button>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+      <section class="md:container mx-auto my-5 md:my-8 lg:my-10">
+        <div class="text center space-y-5">
+          <h1 class="font-[900] text-5xl text-center">
+            CEO Talk - Insights and Innovations
+          </h1>
+          <p class="font-medium text-opacity-80 text-center">
+            Where Industry Leaders Share their Vision
+          </p>
+          <p class="font-normal text-opacity-50 w-3/4 mx-auto text-center">
+            Join us for an exclusive CEO talk where leaders from top tech
+            companies discuss emerging trends in data, AI, and innovation. This
+            is a must-attend event for professionals looking to stay ahead of
+            industry changes.
+          </p>
+          <div class="flex items-center justify-center gap-4">
+            <img src="Assets/calendar.png" alt="Calendar" class="w-6 h-6" />
+            <h3 class="font-bold text-lg">8 - 9 NOV, 2024</h3>
+          </div>
+          <div
+            class="border-2 border-red-500 flex items-center justify-center gap-4"
+          >
+            <img
+              src="Assets/google-maps.png"
+              alt="Location"
+              class="border-2 border-green-700 w-10 h-10 lg:w-6 lg:h-6"
+            />
+            <a
+              href="https://www.google.com/maps/place/Satyendra+Nath+Bose+Academic+Building/@22.802616,89.5321499,17z/data=!3m1!4b1!4m6!3m5!1s0x39ff8549472ab2c7:0x581022fe2caec6f6!8m2!3d22.8026111!4d89.5347248!16s%2Fg%2F11ddwhpz14?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              class="font-bold text-lg"
+              >DR. Satyendra Nath Bose Academic Building, Khulna University</a
+            >
+          </div>
+          <div>
+            <div class="flex gap-4 w-fit mx-auto">
+              <a
+                class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
+                href="#"
+              >
+                Learn More
+              </a>
+              <a
+                class="border-[1px] border-black hover:bg-buttonHover hover:bg-buttonHover inline-block px-4 py-2 rounded"
+                href="#speakers"
+              >
+                Speakers</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- Program -->
+      <section class="md:container mx-auto my-5 md:my-8 lg:my-10">
+        <div>
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold mb-3">PROGRAM</h2>
+            <p class="text-gray-600">
+              This conference runs for 6 days from 23 - 26 May. We also provide
+              free lunch and coffee breaks each day.
+            </p>
+          </div>
+
+          <!-- Program Days -->
+          <div class="grid grid-cols-6 text-white">
+            <button
+              id="btn-day-1"
+              onclick="showDay(1, event)"
+              class="bg-red-600 py-4 px-6 text-center font-semibold day-btn"
+            >
+              <span>DAY 1</span>
+              <p class="text-xs mt-1">23 May 2024</p>
+            </button>
+            <button
+              id="btn-day-2"
+              onclick="showDay(2, event)"
+              class="bg-red-500 py-4 px-6 text-center font-semibold day-btn"
+            >
+              <span>DAY 2</span>
+              <p class="text-xs mt-1">01 Mar 2024</p>
+            </button>
+            <button
+              id="btn-day-3"
+              onclick="showDay(3, event)"
+              class="bg-red-500 py-4 px-6 text-center font-semibold day-btn"
+            >
+              <span>DAY 3</span>
+              <p class="text-xs mt-1">23 May 2024</p>
+            </button>
+            <button
+              id="btn-day-4"
+              onclick="showDay(4, event)"
+              class="bg-red-500 py-4 px-6 text-center font-semibold day-btn"
+            >
+              <span>DAY 4</span>
+              <p class="text-xs mt-1">24 May 2024</p>
+            </button>
+            <button
+              id="btn-day-5"
+              onclick="showDay(5, event)"
+              class="bg-red-500 py-4 px-6 text-center font-semibold day-btn"
+            >
+              <span>DAY 5</span>
+              <p class="text-xs mt-1">25 May 2024</p>
+            </button>
+            <button
+              id="btn-day-6"
+              onclick="showDay(6, event)"
+              class="bg-red-500 py-4 px-6 text-center font-semibold day-btn"
+            >
+              <span>DAY 6</span>
+              <p class="text-xs mt-1">26 May 2024</p>
+            </button>
+          </div>
+
+          <!-- Event Detail -->
+          <!-- Day - 01 -->
+          <div
+            id="day-1"
+            class="day bg-white mt-8 p-6 border-2 border-gray-400 rounded-lg"
+          >
+            <div class="flex items-center">
+              <!-- Speaker Image -->
+              <img
+                src="Assets/speaker-1.png"
+                class="w-20 h-20 rounded-full mr-4 object-cover"
+                alt="Speaker"
+              />
+
+              <!-- Session Info -->
+              <div>
+                <h3 class="text-xl font-semibold mb-3">
+                  Welcoming and Introduction
+                </h3>
+                <div
+                  class="flex items-start justify-center flex-col space-y-2 text-sm text-gray-500"
+                >
+                  <span class="flex"> 09:00 - 10:30</span>
+                  <span class="flex"> Room A</span>
+                  <span class="flex"> Laurence Francis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Day - 02 -->
+          <div
+            id="day-2"
+            class="day bg-white hidden mt-8 p-6 border-2 border-gray-400 rounded-lg"
+          >
+            <div class="flex items-center">
+              <!-- Speaker Image -->
+              <img
+                src="Assets/speaker.png"
+                class="w-20 h-20 rounded-full mr-4 object-cover"
+                alt="Speaker"
+              />
+
+              <!-- Session Info -->
+              <div>
+                <h3 class="text-xl font-semibold mb-3">Welcome to day-2</h3>
+                <div
+                  class="flex items-start justify-center flex-col space-y-2 text-sm text-gray-500"
+                >
+                  <span class="flex"> 09:00 - 10:30</span>
+                  <span class="flex"> Room A</span>
+                  <span class="flex"> Laurence Francis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Day - 03 -->
+          <div
+            id="day-3"
+            class="day bg-white hidden mt-8 p-6 border-2 border-gray-400 rounded-lg"
+          >
+            <div class="flex items-center">
+              <!-- Speaker Image -->
+              <img
+                src="Assets/speaker.png"
+                class="w-20 h-20 rounded-full mr-4 object-cover"
+                alt="Speaker"
+              />
+
+              <!-- Session Info -->
+              <div>
+                <h3 class="text-xl font-semibold mb-3">
+                  Welcoming and Introduction
+                </h3>
+                <div
+                  class="flex items-start justify-center flex-col space-y-2 text-sm text-gray-500"
+                >
+                  <span class="flex"> 09:00 - 10:30</span>
+                  <span class="flex"> Room A</span>
+                  <span class="flex"> Laurence Francis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Day - 04 -->
+          <div
+            id="day-4"
+            class="day bg-white hidden mt-8 p-6 border-2 border-gray-400 rounded-lg"
+          >
+            <div class="flex items-center">
+              <!-- Speaker Image -->
+              <img
+                src="Assets/speaker.png"
+                class="w-20 h-20 rounded-full mr-4 object-cover"
+                alt="Speaker"
+              />
+
+              <!-- Session Info -->
+              <div>
+                <h3 class="text-xl font-semibold mb-3">
+                  Welcoming and Introduction
+                </h3>
+                <div
+                  class="flex items-start justify-center flex-col space-y-2 text-sm text-gray-500"
+                >
+                  <span class="flex"> 09:00 - 10:30</span>
+                  <span class="flex"> Room A</span>
+                  <span class="flex"> Laurence Francis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Day - 05 -->
+          <div
+            id="day-5"
+            class="day bg-white hidden mt-8 p-6 border-2 border-gray-400 rounded-lg"
+          >
+            <div class="flex items-center">
+              <!-- Speaker Image -->
+              <img
+                src="Assets/speaker.png"
+                class="w-20 h-20 rounded-full mr-4 object-cover"
+                alt="Speaker"
+              />
+
+              <!-- Session Info -->
+              <div>
+                <h3 class="text-xl font-semibold mb-3">
+                  Welcoming and Introduction
+                </h3>
+                <div
+                  class="flex items-start justify-center flex-col space-y-2 text-sm text-gray-500"
+                >
+                  <span class="flex"> 09:00 - 10:30</span>
+                  <span class="flex"> Room A</span>
+                  <span class="flex"> Laurence Francis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Day - 06 -->
+          <div
+            id="day-6"
+            class="day bg-white hidden mt-8 p-6 border-2 border-gray-400 rounded-lg"
+          >
+            <div class="flex items-center">
+              <!-- Speaker Image -->
+              <img
+                src="Assets/speaker.png"
+                class="w-20 h-20 rounded-full mr-4 object-cover"
+                alt="Speaker"
+              />
+
+              <!-- Session Info -->
+              <div>
+                <h3 class="text-xl font-semibold mb-3">
+                  Welcoming and Introduction
+                </h3>
+                <div
+                  class="flex items-start justify-center flex-col space-y-2 text-sm text-gray-500"
+                >
+                  <span class="flex"> 09:00 - 10:30</span>
+                  <span class="flex"> Room A</span>
+                  <span class="flex"> Laurence Francis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Speakers -->
+      <section id="speakers" class="md:container mx-auto my-5 md:my-8 lg:my-10">
+        <div>
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold mb-3">Speakers </h2>
+            <p class="text-gray-600">
+              This conference runs for 6 days from 23 - 26 May. We also provide
+              free lunch and coffee breaks each day.
+            </p>
+          </div>
+          <div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 border-2 border-red-500">
+             <div class="speaker-card border-2 border-red-600">
+                <div class="relative group ">
+                    <!-- Profile Image -->
+                    <img
+                    src="Assets/speaker-1.png"
+                    alt="Speaker"
+                    class="border-2 border-green-600"
+                    />
+                    <!-- Overlay with Social Icons -->
+                    <div class="absolute inset-0 bg-red-600 bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg">
+                    <div class="flex gap-3">
+                        <a href="" class="flex items-center">
+                        <img src="Assets/facebook.png" alt="Facebook" class="w-8 h-8 opacity-40">
+                        </a>
+                        <a href="" class="flex items-center">
+                        <img src="Assets/linkedin.png" alt="LinkedIn" class="w-8 h-8 opacity-40">
+                        </a>
+                        <a href="" class="flex items-center">
+                        <img src="Assets/twitter.png" alt="Twitter" class="w-8 h-8 opacity-40">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+  
+                <div class="p-4 flex justify-between border-2 border-green-600">
+                    <div>
+                    <h3 class="font-bold text-lg">Laurence Francis</h3>
+                    <p class="text-gray-500">CEO, Google</p>
+                    </div>
+                </div>
+            </div>
+             <div class="speaker-card border-2 border-red-600">
+                <div class="relative group ">
+                    <!-- Profile Image -->
+                    <img
+                    src="Assets/speaker-1.png"
+                    alt="Speaker"
+                    class="border-2 border-green-600"
+                    />
+                    <!-- Overlay with Social Icons -->
+                    <div class="absolute inset-0 bg-red-600 bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg">
+                    <div class="flex gap-3">
+                        <a href="" class="flex items-center">
+                        <img src="Assets/facebook.png" alt="Facebook" class="w-8 h-8 opacity-40">
+                        </a>
+                        <a href="" class="flex items-center">
+                        <img src="Assets/linkedin.png" alt="LinkedIn" class="w-8 h-8 opacity-40">
+                        </a>
+                        <a href="" class="flex items-center">
+                        <img src="Assets/twitter.png" alt="Twitter" class="w-8 h-8 opacity-40">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+  
+                <div class="p-4 flex justify-between border-2 border-green-600">
+                    <div>
+                    <h3 class="font-bold text-lg">Laurence Francis</h3>
+                    <p class="text-gray-500">CEO, Google</p>
+                    </div>
+                </div>
+            </div>
+             <div class="speaker-card border-2 border-red-600">
+                <div class="relative group ">
+                    <!-- Profile Image -->
+                    <img
+                    src="Assets/speaker-1.png"
+                    alt="Speaker"
+                    class="border-2 border-green-600"
+                    />
+                    <!-- Overlay with Social Icons -->
+                    <div class="absolute inset-0 bg-red-600 bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg">
+                    <div class="flex gap-3">
+                        <a href="" class="flex items-center">
+                        <img src="Assets/facebook.png" alt="Facebook" class="w-8 h-8 opacity-40">
+                        </a>
+                        <a href="" class="flex items-center">
+                        <img src="Assets/linkedin.png" alt="LinkedIn" class="w-8 h-8 opacity-40">
+                        </a>
+                        <a href="" class="flex items-center">
+                        <img src="Assets/twitter.png" alt="Twitter" class="w-8 h-8 opacity-40">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+  
+                <div class="p-4 flex justify-between border-2 border-green-600">
+                    <div>
+                    <h3 class="font-bold text-lg">Laurence Francis</h3>
+                    <p class="text-gray-500">CEO, Google</p>
+                    </div>
+                </div>
+            </div>
+             <div class="speaker-card border-2 border-red-600">
+                <div class="relative group ">
+                    <!-- Profile Image -->
+                    <img
+                    src="Assets/speaker-1.png"
+                    alt="Speaker"
+                    class="border-2 border-green-600"
+                    />
+                    <!-- Overlay with Social Icons -->
+                    <div class="absolute inset-0 bg-red-600 bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg">
+                    <div class="flex gap-3">
+                        <a href="" class="flex items-center">
+                        <img src="Assets/facebook.png" alt="Facebook" class="w-8 h-8 opacity-40">
+                        </a>
+                        <a href="" class="flex items-center">
+                        <img src="Assets/linkedin.png" alt="LinkedIn" class="w-8 h-8 opacity-40">
+                        </a>
+                        <a href="" class="flex items-center">
+                        <img src="Assets/twitter.png" alt="Twitter" class="w-8 h-8 opacity-40">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+  
+                <div class="p-4 flex justify-between border-2 border-green-600">
+                    <div>
+                    <h3 class="font-bold text-lg">Laurence Francis</h3>
+                    <p class="text-gray-500">CEO, Google</p>
+                    </div>
+                </div>
+            </div>
+             <div class="speaker-card border-2 border-red-600">
+                <div class="relative group ">
+                    <!-- Profile Image -->
+                    <img
+                    src="Assets/speaker-1.png"
+                    alt="Speaker"
+                    class="border-2 border-green-600"
+                    />
+                    <!-- Overlay with Social Icons -->
+                    <div class="absolute inset-0 bg-red-600 bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg">
+                    <div class="flex gap-3">
+                        <a href="" class="flex items-center">
+                        <img src="Assets/facebook.png" alt="Facebook" class="w-8 h-8 opacity-40">
+                        </a>
+                        <a href="" class="flex items-center">
+                        <img src="Assets/linkedin.png" alt="LinkedIn" class="w-8 h-8 opacity-40">
+                        </a>
+                        <a href="" class="flex items-center">
+                        <img src="Assets/twitter.png" alt="Twitter" class="w-8 h-8 opacity-40">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+  
+                <div class="p-4 flex justify-between border-2 border-green-600">
+                    <div>
+                    <h3 class="font-bold text-lg">Laurence Francis</h3>
+                    <p class="text-gray-500">CEO, Google</p>
+                    </div>
+                </div>
+            </div>
+             <div class="speaker-card border-2 border-red-600">
+                <div class="relative group ">
+                    <!-- Profile Image -->
+                    <img
+                    src="Assets/speaker-1.png"
+                    alt="Speaker"
+                    class="border-2 border-green-600"
+                    />
+                    <!-- Overlay with Social Icons -->
+                    <div class="absolute inset-0 bg-red-600 bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg">
+                    <div class="flex gap-3">
+                        <a href="" class="flex items-center">
+                        <img src="Assets/facebook.png" alt="Facebook" class="w-8 h-8 opacity-40">
+                        </a>
+                        <a href="" class="flex items-center">
+                        <img src="Assets/linkedin.png" alt="LinkedIn" class="w-8 h-8 opacity-40">
+                        </a>
+                        <a href="" class="flex items-center">
+                        <img src="Assets/twitter.png" alt="Twitter" class="w-8 h-8 opacity-40">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+  
+                <div class="p-4 flex justify-between border-2 border-green-600">
+                    <div>
+                    <h3 class="font-bold text-lg">Laurence Francis</h3>
+                    <p class="text-gray-500">CEO, Google</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </section>
+       <!-- FAQ -->
+      <section
+        class="container mx-auto my-5 md:my-8 lg:my-10 bg-gray-100 p-4 md:p-6 lg:p-8"
+      >
+        <!-- Title -->
+        <div class="text-center mb-10 lg:mb-16 border-2 border-red-500">
+          <h1 class="font-semibold text-3xl md:text-4xl lg:text-5xl">
+            Frequently Asked <span class="text-primary-colour">Questions</span>
+          </h1>
+        </div>
+        <!-- content -->
+        <div
+          class="border-2 border-red-500 flex flex-col lg:flex-row justify-between items-center mx-auto"
+        >
+          <!-- icon -->
+          <div
+            class="border-2 border-red-500 h-full lg:w-1/2 mx-auto flex items-center mb-5 lg:mb-0"
+          >
+            <img
+              src="Assets/Icon/faq.png"
+              alt=""
+              class="w-fit border-green-600 border-2"
+            />
+          </div>
+          <!-- questions -->
+          <div class="border-2 border-red-500 w-full p-2 lg:w-1/2 space-y-2">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                What is the "CEO Talk - Insights and Innovations" event about?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  The "CEO Talk - Insights and Innovations" is an exclusive event where leaders from top tech companies discuss emerging trends in data, AI, and innovation. It is a must-attend for professionals looking to stay ahead of industry changes.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                When and where is the event taking place?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  The event will be held on 8-9 November 2024 at the Dr. Satyendra Nath Bose Academic Building, Khulna University.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                How long does the event last, and are meals provided?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  The event lasts for 6 days, from 23-28 May, and includes free lunch and coffee breaks each day.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                Who is the keynote speaker for the event?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  The keynote speaker is Laurence Francis, CEO of Google, who will be speaking multiple times throughout the event.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                How can I register for the event?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  You can register by clicking the "Registration" button located in the top-right corner of the event page.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gradient-to-r from-[#286d89] to-[#34b9c3] p-8 py-5">
+      <section class="md:container mx-auto my-5 lg:my-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+          <div class="border-2 border-yellow-500">
+            <div class="flex flex-col gap-3 mb-6 text-center lg:text-left">
+              <div
+                class="btn mx-auto lg:ml-0 w-fit bg-transparent hover:bg-buttonHover border-none focus:outline-none"
+              >
+                <h1 class="flex items-center font-extrabold text-xl text-white">
+                  Synergy -
+                  <span
+                    class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"
+                    >X</span
+                  >
+                </h1>
+              </div>
+              <p class="font-medium text-lg mb-3">
+                Empowering Innovation, Inspiring Excellence
+              </p>
+              <p class="font-normal text-base text-gray-400">
+                We promote the power of ideas and creativity, empowering
+                participants to innovate and challenge conventional thinking.
+                Our collaborative environment nurtures future leaders and
+                visionaries. Join us in celebrating ingenuity and fostering a
+                passion for lifelong learning.
+              </p>
+            </div>
+          </div>
+          <div class="divider lg:hidden"></div>
+          <div class="flex justify-center border-2 border-yellow-500 text-center lg:text-left">
+            <div class="mx-auto">
+              <h1 class="font-bold text-lg text-[#FFFFFFE6] mb-6">
+                Useful Links
+              </h1>
+              <ul class="font-normal mx-auto text-center text-base text-[#FFFFFF99] space-y-2">
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  CEO Talk
+                </li>
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Competitive Programming
+                </li>
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Datathon
+                </li>
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Project Showcase
+                </li>
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Poster Presentation
+                </li>
+                <li class="font-bold hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Register Now
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="divider lg:hidden"></div>
+          <div class="flex justify-center border-2 border-yellow-500 text-center lg:text-left">
+            <div class="mx-auto">
+              <h1 class="font-bold text-lg text-[#FFFFFFE6] mb-6">
+                Contact Us
+              </h1>
+              <ul class="w-fit font-normal mx-auto lg:ml-0 text-base text-[#FFFFFF99] space-y-3">
+                <li class="flex items-center gap-3 mb-2">
+                  <img src="Assets/mail.png" alt="" class="w-8 h-8" />
+                  info@universitycompetition.edu
+                </li>
+                <li class="flex items-center gap-3 mb-2">
+                  <img src="Assets/phone.png" alt="" class="w-8 h-8" />
+                  +8801719430433
+                </li>
+                <li class="flex items-center gap-3 mb-2">
+                  <img src="Assets/google-maps.png" alt="" class="w-8 h-8" />
+                  <a
+                    href="https://www.google.com.bd/maps/place/Khulna+University/@22.8022088,89.5313482,17z/data=!3m1!4b1!4m6!3m5!1s0x39ff85490c50d28f:0xadae6f7b93b7069a!8m2!3d22.8022039!4d89.5339231!16zL20vMDZsenhy?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D"
+                    class="font-bold"
+                    >University Campus</a
+                  >
+                </li>
+                <li>
+                  <div class="flex items-center gap-4 my-5">
+                    <img src="Assets/facebook.png" alt="" class="w-10 h-10" />
+                    <img src="Assets/twitter.png" alt="" class="w-10 h-10" />
+                    <img src="Assets/instagram.png" alt="" class="w-10 h-10" />
+                    <img src="Assets/gmail.png" alt="" class="w-10 h-10" />
+                  </div>
+                </li>
+                
+              </ul>
+              <p class="text-lg">
+                  Reach us for immediate assistance or clarification.
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="flex justify-between items-center mt-5">
+          <p class="text-[#FFFFFF99] text-base">
+            &copy; 2024 SynergyX. All rights reserved.
+          </p>
+          <p class="text-[#FFFFFF99] text-base">
+            Designed by <span class="text-white">Team Synergy - <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">X</span></span>
+          </p>
+      </section>
+    </footer>
+    <!-- script -->
+    <script src="Script/program.js"></script>
+  </body>
+</html>
