@@ -1,11 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datathon</title>
-</head>
-<body>
-    <header></header>
-</body>
+    <!-- DaisyUI + TailWind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              buttonHover: "#ffdbd7",
+              dark1: "#5E6282",
+            },
+            fontFamily: {
+              "google-sans": ["Google Sans", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"],
+              volkhov: ["Volkhov", "serif"],
+              "open-sans": ["Open Sans", "sans-serif"],
+              miama: ["Miama", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header
+      class="md:container mx-auto py-5 md:pt-5 lg:pt-10 bg-violet-400 bg-no-repeat bg-cover"
+    >
+      <!-- Nabar Section -->
+      <nav
+        class="mx-auto border-2 border-red-600 p-2 lg:p-4 flex justify-between items-center gap-[20%]"
+      >
+        <div
+          class="btn bg-transparent hover:bg-buttonHover border-none focus:outline-none"
+        >
+          <h1 class="font-extrabold text-xl">
+            Synergy -
+            <span
+              class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"
+              >X</span
+            >
+          </h1>
+        </div>
+
+        <div class="justify-end flex items-center">
+          <div class="flex-1">
+            <ul
+              class="font-google-sans font-semibold text-lg flex justify-between items-center gap-4 xl:gap-8 2xl:gap-14"
+            >
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <a href="">About</a>
+              </li>
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <!-- <a href="#events">Events</a> -->
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="m-1">Events</div>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content menu bg-base-100 rounded-box z-[1] w-fit p-2 mt-5 shadow"
+                  >
+                    <li><a>CEO Talk</a></li>
+                    <li><a>Datathon</a></li>
+                    <li><a>Programming Contest</a></li>
+                    <li><a>Innovation Showcasing</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
+                <a href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <li class="hidden hover:bg-buttonHover rounded-lg sm:flex btn-effect">
+            <button
+              class="border-2 border-black font-bold text-base rounded-lg p-2"
+            >
+              Registration
+            </button>
+          </li>
+          <!-- Dropdown Menu for Small Device -->
+          <div class="dropdown dropdown-left lg:hidden ml-5">
+            <!-- Menu Button -->
+            <div
+              tabindex="0"
+              role="button"
+              class="p-1 rounded-xl border-none lg:hidden"
+            >
+              <img
+                src="Assets/Icon/menu.svg"
+                alt="menubar"
+                class="w-6 md:w-8 h-6 md:h-8"
+              />
+            </div>
+            <!-- Menu -->
+            <ul
+              tabindex="0"
+              class="menu menu-xs dropdown-content bg-base-100 rounded-box z-[1] mt-4 sm:mt-14 p-1 shadow"
+            >
+              <!-- Main Navigation Links -->
+              <ul
+                class="space-y-1 font-normal text-sm md:text-base text-[#737373] rounded-lg"
+              >
+                <li>
+                  <a class="btn-effect">About</a>
+                </li>
+                <li>
+                  <a class="btn-effect">Events</a>
+                </li>
+                <li>
+                  <a class="btn-effect">Contact Us</a>
+                </li>
+                <li class="sm:hidden">
+                  <button
+                    class="text-black border-[1px] border-black px-3 py-1 flex justify-around p-1 md:hidden text-left font-extrabold text-[10px] md:text-base rounded-full"
+                  >
+                    Registration
+                  </button>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+      <section class="md:container mx-auto my-5 md:my-8 lg:my-10">
+        <div class="text center space-y-5">
+          <h1 class="font-[900] text-5xl text-center">
+            Synergy -
+            <span
+              class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"
+              >X</span
+            >
+            Datathon 2024
+          </h1>
+          <p class="font-medium text-opacity-80 text-center">
+            Unleash Your Data Skills | Compete | Collaborate | Conquer
+          </p>
+          <p class="font-normal text-opacity-50 w-3/4 mx-auto text-center">
+            Unleash your data science potential. Join the competition and tackle
+            real-world problems using cutting-edge technology.
+          </p>
+          <div class="flex items-center justify-center gap-4">
+            <img src="Assets/calendar.png" alt="Calendar" class="w-6 h-6" />
+            <h3 class="font-bold text-lg">8 - 9 NOV, 2024</h3>
+          </div>
+          <div
+            class="border-2 border-red-500 flex items-center justify-center gap-4"
+          >
+            <img
+              src="Assets/google-maps.png"
+              alt="Location"
+              class="border-2 border-green-700 w-10 h-10 lg:w-6 lg:h-6"
+            />
+            <a
+              href="https://www.google.com/maps/place/Satyendra+Nath+Bose+Academic+Building/@22.802616,89.5321499,17z/data=!3m1!4b1!4m6!3m5!1s0x39ff8549472ab2c7:0x581022fe2caec6f6!8m2!3d22.8026111!4d89.5347248!16s%2Fg%2F11ddwhpz14?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              class="font-bold text-lg"
+              >DR. Satyendra Nath Bose Academic Building, Khulna University</a
+            >
+          </div>
+          <div>
+            <div class="flex gap-4 w-fit mx-auto">
+              <a
+                class="border-[1px] border-black hover:bg-buttonHover hover:bg-buttonHover inline-block px-4 py-2 rounded"
+              >
+                Register Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
 </html>
