@@ -35,6 +35,7 @@
         theme: {
           extend: {
             colors: {
+              primary: "#f58220",
               buttonHover: "#ffdbd7",
               dark1: "#5E6282",
             },
@@ -75,6 +76,9 @@
             <ul
               class="font-google-sans font-semibold text-lg flex justify-between items-center gap-4 xl:gap-8 2xl:gap-14"
             >
+              <li class="bg-primary hidden rounded-lg lg:flex p-2">
+                <a href="">Home</a>
+              </li>
               <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
                 <a href="">About</a>
               </li>
@@ -102,7 +106,7 @@
                 class="hidden hover:bg-buttonHover rounded-lg sm:flex btn-effect"
               >
                 <button
-                  class="border-2 border-black font-bold text-base rounded-lg p-2"
+                  class="border-2 border-black font-bold text-xl rounded-lg p-2"
                 >
                   Registration
                 </button>
@@ -353,15 +357,15 @@
               datasets.
             </p>
             <div class="flex gap-4 w-fit">
-              <a
+              <button
+              onclick="Datathon()";
                 class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
-                href="#"
+
               >
                 Learn More
-              </a>
+              </button>
               <a
-                class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
-                href="#"
+                class="font-semibold bg-primary border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
               >
                 Register Now</a
               >
@@ -401,7 +405,7 @@
                 Learn More
               </a>
               <a
-                class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
+                class="font-semibold bg-primary border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
                 href="#"
               >
                 Register Now</a
@@ -457,7 +461,7 @@
                 Learn More
               </a>
               <a
-                class="border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
+                class="font-semibold bg-primary border-[1px] border-black hover:bg-buttonHover inline-block px-4 py-2 rounded"
                 href="#"
               >
                 Register Now</a

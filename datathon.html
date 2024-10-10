@@ -174,7 +174,7 @@
           <div>
             <div class="flex gap-4 w-fit mx-auto">
               <a
-                class="border-[1px] border-black hover:bg-buttonHover hover:bg-buttonHover inline-block px-4 py-2 rounded"
+                class="font-bold text-xl border-[1px] border-black hover:bg-buttonHover hover:bg-buttonHover inline-block px-4 py-2 rounded"
               >
                 Register Now</a
               >
@@ -183,5 +183,498 @@
         </div>
       </section>
     </header>
+    <main>
+      <!-- About -->
+      <!-- <section
+        class="md:container mx-auto p-2 my-4 md:my-5 lg:my-10 bg-gray-300"
+      >
+        <p class="bg-white rounded-lg p-2 font-normal text-lg">
+          The SynergyX Datathon 2024 is a premier competition that brings
+          together aspiring data scientists, engineers, and problem-solvers to
+          work on complex, real-world challenges. This year’s focus is on
+          creating innovative solutions using big data, machine learning, and
+          AI. Whether you're a seasoned data expert or a beginner eager to
+          learn, this datathon offers an exciting platform to showcase your
+          skills, collaborate with talented peers, and gain valuable insights
+          from industry professionals.
+        </p>
+      </section> -->
+
+      <!-- Registration -->
+      <section
+        class="md:container mx-auto p-2 my-4 md:my-5 lg:my-10 bg-gray-100 rounded-lg"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-3 justify-center items-center border-2 border-green-600"
+        >
+          <div
+            class="bg-white rounded-lg p-4 w-fit border-2 border-red-500 mx-auto"
+          >
+            <h1 class="font-bold text-xl mb-3">Registration Deadline</h1>
+            <h1 class="font-normal text-base text-gray-500 mb-2">
+              <span class="font-medium text-lg text-black">Opens:</span> October
+              1, 2024
+            </h1>
+            <h1 class="font-normal text-base text-gray-500">
+              <span class="font-medium text-lg text-black">Closes:</span>
+              October 10, 2024 (11:59 PM GMT)
+            </h1>
+
+            <!-- Countdown Timer -->
+            <div
+              class="grid auto-cols-max grid-flow-col gap-5 text-center justify-center rounded-xl mt-3"
+            >
+              <div
+                class="bg-[#37a3cf] rounded-box text-black flex flex-col p-2"
+              >
+                <span class="countdown font-mono text-2xl flex justify-center">
+                  <span id="days" style="--value: 15"></span>
+                </span>
+                days
+              </div>
+              <div
+                class="bg-[#59d9e3] rounded-box text-neutral-black flex flex-col p-2"
+              >
+                <span class="countdown font-mono text-2xl flex justify-center">
+                  <span id="hours" style="--value: 10"></span>
+                </span>
+                hours
+              </div>
+              <div
+                class="bg-[#31afd3] rounded-box text-neutral-black flex flex-col p-2"
+              >
+                <span class="countdown font-mono text-2xl flex justify-center">
+                  <span id="minutes" style="--value: 24"></span>
+                </span>
+                min
+              </div>
+              <div
+                class="bg-[#df6951] rounded-box text-neutral-black flex flex-col p-2"
+              >
+                <span class="countdown font-mono text-2xl flex justify-center">
+                  <span id="seconds" style="--value: 00"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg p-4 w-fit border-2 border-red-500 mx-auto"
+          >
+            <h1 class="font-bold text-xl mb-3">Registration Fee</h1>
+            <h1 class="font-normal text-base text-gray-500">
+              $70 per team (up to 4 members)
+            </h1>
+          </div>
+          <div
+            class="bg-white rounded-lg p-4 w-3/4 border-2 border-red-500 mx-auto"
+          >
+            <h1 class="font-bold text-xl mb-3">Venue</h1>
+            <div
+              class="border-2 border-red-500 font-normal text-base text-gray-500 flex items-center justify-center gap-4"
+            >
+              <img
+                src="Assets/google-maps.png"
+                alt="Location"
+                class="border-2 border-green-700 w-10 h-10 lg:w-6 lg:h-6"
+              />
+              <a
+                href="https://www.google.com/maps/place/Satyendra+Nath+Bose+Academic+Building/@22.802616,89.5321499,17z/data=!3m1!4b1!4m6!3m5!1s0x39ff8549472ab2c7:0x581022fe2caec6f6!8m2!3d22.8026111!4d89.5347248!16s%2Fg%2F11ddwhpz14?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                class="font-bold text-lg"
+                >DR. Satyendra Nath Bose Academic Building, Khulna University</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto w-fit">
+          <button class="bg-white px-3 py-1 rounded-lg font-bold text-lg mt-3">
+            More Details
+          </button>
+        </div>
+      </section>
+      <!-- Track & Categories -->
+      <section
+        class="md:container mx-auto p-5 my-4 md:my-5 lg:my-10 bg-gray-100 rounded-lg"
+      >
+        <div class="text-center flex flex-col items-center justify-between">
+          <h1
+            class="bg-white font-extrabold text-base px-3 py-1 mb-3 rounded-full"
+          >
+            Tracks & Categories
+          </h1>
+          <h1 class="font-bold text-3xl lg:text-4xl text-[#212121] mb-5">
+            Embark on an innovation journey with three exciting tracks
+          </h1>
+        </div>
+        <div class="space-y-4">
+          <!-- Generative AI -->
+          <div
+            class="flex w-fit items-center gap-10 px-10 mx-auto bg-white p-5 rounded-xl"
+          >
+            <div>
+              <img src="Assets/ai.png" alt="" class="w-20 h-20" />
+            </div>
+            <div>
+              <h1 class="font-bold text-xl md:text-3xl mb-3">
+                Generative AI: Infinite Imagination
+              </h1>
+              <ul class="text-gray-500 text-sm md:text-base">
+                <li style="list-style: circle inside">
+                  Unleash creativity and transform data into mesmerizing
+                  content.
+                </li>
+                <li style="list-style: circle inside">
+                  Integrate generative creations into apps for dynamic
+                  experiences.
+                </li>
+                <li style="list-style: circle inside">
+                  Epic rewards for dreamers and creators.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Machine Learning -->
+          <div
+            class="flex w-fit items-center gap-10 px-10 mx-auto bg-white p-5 rounded-xl"
+          >
+            <div>
+              <img src="Assets/machine-learning.png" alt="" class="w-20 h-20" />
+            </div>
+            <div>
+              <h1 class="font-bold text-xl md:text-3xl mb-3">
+                Core Machine Learning: "Mastermind of Algorithms"
+              </h1>
+              <ul class="text-gray-500 text-sm md:text-base">
+                <li style="list-style: circle inside">
+                  Tackle challenges with strategic ML insights.
+                </li>
+                <li style="list-style: circle inside">
+                  Apply versatile algorithms for diverse datasets.
+                </li>
+                <li style="list-style: circle inside">
+                  Shape the future with Streamlit magic and win rewards.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- No Code: Data Analysis -->
+          <div
+            class="flex w-fit items-center gap-10 px-10 mx-auto bg-white p-5 rounded-xl"
+          >
+            <div>
+              <img src="Assets/data-analysis.png" alt="" class="w-20 h-20" />
+            </div>
+            <div>
+              <h1 class="font-bold text-xl md:text-3xl mb-3">
+                Data Analysis (No Code): "Insight Illuminators"
+              </h1>
+              <ul class="text-gray-500 text-sm md:text-base">
+                <li style="list-style: circle inside">
+                  Explore data without coding constraints in a case study
+                  competition.
+                </li>
+                <li style="list-style: circle inside">
+                  Showcase creativity and strategic thinking.
+                </li>
+                <li style="list-style: circle inside">
+                  Stand out with case study excellence.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why Participate -->
+      <section
+        class="md:container mx-auto p-5 my-4 md:my-5 lg:my-10 bg-gray-100 rounded-lg"
+      >
+        <div>
+          <!-- Particapte Content -->
+          <div class="mb-8">
+            <div class="text-center flex flex-col items-center justify-between">
+              <h1
+                class="bg-white font-extrabold text-base px-3 py-1 mb-3 rounded-full"
+              >
+                participation
+              </h1>
+              <h1 class="font-bold text-3xl lg:text-4xl text-[#212121] mb-5">
+                Why Participate in Synergy -
+                <span
+                  class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"
+                  >X</span
+                >
+                Datathon 2024?
+              </h1>
+            </div>
+          </div>
+          <!-- Participation Motive Card -->
+          <div
+            class="grid grid-cols-1 p-5 md:grid-cols-2 lg:grid-cols-4 gap-10"
+          >
+            <!-- Card-1 -->
+            <div class="bg-[#fb9c28b4] shadow-xl rounded-2xl p-6 space-y-4">
+              <img src="Assets/challenges.png" alt="" class="w-20 h-20" />
+              <h2 class="font-extrabold text-xl text-[#1C1C1C]">
+                Challenge Yourself
+              </h2>
+              <p class="font-normal text-lg text-[#494949]">
+                Tackle real-world data problems and enhance your skills.
+              </p>
+            </div>
+            <!-- Card-2 -->
+            <div class="bg-[#ffd13ce2] rounded-2xl p-6 space-y-4">
+              <img src="Assets/networking.png" alt="" class="w-20 h-20" />
+              <h2 class="font-extrabold text-xl text-[#1C1C1C]">Network</h2>
+              <p class="font-normal text-lg text-[#494949]">
+                Meet like-minded individuals and industry experts
+              </p>
+            </div>
+            <!-- Card-3 -->
+            <div class="bg-[#ff816eec] rounded-2xl p-6 space-y-4">
+              <img src="Assets/prize.png" alt="" class="w-20 h-20" />
+              <h2 class="font-extrabold text-xl text-[#1C1C1C]">Win Prizes</h2>
+              <p class="font-normal text-lg text-[#494949]">
+                Compete for exciting rewards, including cash prizes,
+                internships, and more
+              </p>
+            </div>
+            <!-- Card-4 -->
+            <div class="bg-[#a2e983e1] rounded-2xl p-6 space-y-4">
+              <img src="Assets/recognize.png" alt="" class="w-20 h-20" />
+              <h2 class="font-extrabold text-xl text-[#1C1C1C]">
+                Get Recognized
+              </h2>
+              <p class="font-normal text-lg text-[#494949]">
+                Stand out and boost your resume by participating in a
+                prestigious competition
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ -->
+      <section
+        class="container mx-auto my-5 md:my-8 lg:my-10 bg-gray-100 p-4 md:p-6 lg:p-8"
+      >
+        <!-- Title -->
+        <div class="text-center mb-10 lg:mb-16 border-2 border-red-500">
+          <h1 class="font-semibold text-3xl md:text-4xl lg:text-5xl">
+            Frequently Asked <span class="text-primary-colour">Questions</span>
+          </h1>
+        </div>
+        <!-- content -->
+        <div
+          class="border-2 border-red-500 flex justify-center items-center mx-auto"
+        >
+          <!-- questions -->
+          <div class="border-2 border-red-500 w-full p-2 lg:w-1/2 space-y-2">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                What is a Datathon?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  A Datathon is a data-centric competition where participants
+                  are tasked with analyzing datasets, building predictive
+                  models, and deriving insights to solve real-world problems
+                  within a limited time frame.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                Who can participate in the Datathon?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  Anyone with an interest in data science, machine learning, and
+                  analytics can participate. We welcome students, professionals,
+                  and data enthusiasts at all skill levels. You can participate
+                  individually or in teams of up to 4 members.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                How will the data be provided?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  The datasets for the competition will be released at the start
+                  of the Datathon. Participants will have access to download the
+                  data files from the competition portal.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                What tools or software can I use?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  Participants are free to use any tools, programming languages
+                  (e.g., Python, R), and libraries (e.g., TensorFlow,
+                  scikit-learn) for data analysis and model building.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                How will the submissions be evaluated?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  Submissions will be evaluated based on criteria such as model
+                  accuracy, innovative approach, insights drawn, and the clarity
+                  of the solution. The judging panel will include data experts
+                  and industry professionals.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                How do I register my team for the Datathon?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  You can register your team via the official SynergyX Datathon
+                  portal. Simply fill out the team details, pay the registration
+                  fee, and submit. You will receive a confirmation email once
+                  the registration is complete.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-xl font-semibold">
+                What happens if I need help during the Datathon?
+              </div>
+              <div class="collapse-content bg-white p-2">
+                <p>
+                  We will have support staff available throughout the
+                  competition to assist with any technical issues or questions
+                  related to the dataset. You can reach out to them via the
+                  designated help channel provided after registration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gradient-to-r from-[#286d89] to-[#34b9c3] p-8 py-5">
+      <section class="md:container mx-auto my-5 lg:my-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+          <div class="border-2 border-yellow-500">
+            <div class="flex flex-col gap-3 mb-6 text-center lg:text-left">
+              <div
+                class="btn mx-auto lg:ml-0 w-fit bg-transparent hover:bg-buttonHover border-none focus:outline-none"
+              >
+                <h1 class="flex items-center font-extrabold text-xl text-white">
+                  Synergy -
+                  <span
+                    class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"
+                    >X</span
+                  >
+                </h1>
+              </div>
+              <p class="font-medium text-lg mb-3">
+                Empowering Innovation, Inspiring Excellence
+              </p>
+              <p class="font-normal text-base text-gray-400">
+                We promote the power of ideas and creativity, empowering
+                participants to innovate and challenge conventional thinking.
+                Our collaborative environment nurtures future leaders and
+                visionaries. Join us in celebrating ingenuity and fostering a
+                passion for lifelong learning.
+              </p>
+            </div>
+          </div>
+          <div class="divider lg:hidden"></div>
+          <div class="flex justify-center border-2 border-yellow-500 text-center lg:text-left">
+            <div class="mx-auto">
+              <h1 class="font-bold text-lg text-[#FFFFFFE6] mb-6">
+                Useful Links
+              </h1>
+              <ul class="font-normal mx-auto text-center text-base text-[#FFFFFF99] space-y-2">
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  CEO Talk
+                </li>
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Competitive Programming
+                </li>
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Datathon
+                </li>
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Project Showcase
+                </li>
+                <li class="hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Poster Presentation
+                </li>
+                <li class="font-bold hover:bg-buttonHover p-2 mx-auto lg:ml-0 w-fit rounded-lg">
+                  Register Now
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="divider lg:hidden"></div>
+          <div class="flex justify-center border-2 border-yellow-500 text-center lg:text-left">
+            <div class="mx-auto">
+              <h1 class="font-bold text-lg text-[#FFFFFFE6] mb-6">
+                Contact Us
+              </h1>
+              <ul class="w-fit font-normal mx-auto lg:ml-0 text-base text-[#FFFFFF99] space-y-3">
+                <li class="flex items-center gap-3 mb-2">
+                  <img src="Assets/mail.png" alt="" class="w-8 h-8" />
+                  info@universitycompetition.edu
+                </li>
+                <li class="flex items-center gap-3 mb-2">
+                  <img src="Assets/phone.png" alt="" class="w-8 h-8" />
+                  +8801719430433
+                </li>
+                <li class="flex items-center gap-3 mb-2">
+                  <img src="Assets/google-maps.png" alt="" class="w-8 h-8" />
+                  <a
+                    href="https://www.google.com.bd/maps/place/Khulna+University/@22.8022088,89.5313482,17z/data=!3m1!4b1!4m6!3m5!1s0x39ff85490c50d28f:0xadae6f7b93b7069a!8m2!3d22.8022039!4d89.5339231!16zL20vMDZsenhy?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D"
+                    class="font-bold"
+                    >University Campus</a
+                  >
+                </li>
+                <li>
+                  <div class="flex items-center gap-4 my-5">
+                    <img src="Assets/facebook.png" alt="" class="w-10 h-10" />
+                    <img src="Assets/twitter.png" alt="" class="w-10 h-10" />
+                    <img src="Assets/instagram.png" alt="" class="w-10 h-10" />
+                    <img src="Assets/gmail.png" alt="" class="w-10 h-10" />
+                  </div>
+                </li>
+                
+              </ul>
+              <p class="text-lg">
+                  Reach us for immediate assistance or clarification.
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="flex justify-between items-center mt-5">
+          <p class="text-[#FFFFFF99] text-base">
+            &copy; 2024 SynergyX. All rights reserved.
+          </p>
+          <p class="text-[#FFFFFF99] text-base">
+            Designed by <span class="text-white">Team Synergy - <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">X</span></span>
+          </p>
+      </section>
+    </footer>
+    <!-- Script -->
+    <script src="Script/countdown.js"></script>
   </body>
 </html>
