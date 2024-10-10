@@ -79,18 +79,26 @@
                 <a href="">About</a>
               </li>
               <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
-                <a href="#events">Events</a>
-              </li>
-              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
-                <a href="">Schedule</a>
-              </li>
-              <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
-                <a href="">Speakers</a>
+                <!-- <a href="#events">Events</a> -->
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="m-1">Events</div>
+                  <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-fit p-2 mt-5 shadow">
+                    <li><a>CEO Talk</a></li>
+                    <li><a>Datathon</a></li>
+                    <li><a>Programming Contest</a></li>
+                    <li><a>Innovation Showcasing</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="hidden hover:bg-buttonHover rounded-lg lg:flex p-2">
                 <a href="">Contact Us</a>
               </li>
-              <li
+            </ul>
+          </div>
+          
+        </div>
+        <div class="flex items-center gap-2">
+          <li
                 class="hidden hover:bg-buttonHover rounded-lg sm:flex btn-effect"
               >
                 <button
@@ -99,9 +107,7 @@
                   Registration
                 </button>
               </li>
-            </ul>
-          </div>
-          <!-- Dropdown Menu for Small Device -->
+              <!-- Dropdown Menu for Small Device -->
           <div class="dropdown dropdown-left lg:hidden ml-5">
             <!-- Menu Button -->
             <div
@@ -129,12 +135,6 @@
                 </li>
                 <li>
                   <a class="btn-effect">Events</a>
-                </li>
-                <li>
-                  <a class="btn-effect">Schedule</a>
-                </li>
-                <li>
-                  <a class="btn-effect">Speakers</a>
                 </li>
                 <li>
                   <a class="btn-effect">Contact Us</a>
